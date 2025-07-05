@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Pizza Order Form</title>
+</head>
+<body>
+    <h1>Pizza Order Form</h1>
+    <form>
+        <div>
+            <label for="fname">First Name:</label>
+            <input type="text" id="fname" name="fname"><br>
+
+            <label for="lname">Last Name:</label>
+            <input type="text" id="lname" name="lname"><br>
+
+            <label for="email">Email Addresse:</label>
+            <input type="email" id="email" name="email"><br>
+
+            <label for="contact">Contact Nubmber:</label>
+            <input type="tel" id="contact" name="contact"><br>
+
+            <label for="date">Delivery Date:</label>
+            <input type="date" id="date" name="date"><br>
+        </div>
+        <div>
+            <p>Size:</p>
+
+            <input type="radio" name="size" id="small" value="Small">
+            <label for="small">Small</label>
+
+            <input type="radio" name="size" id="medium" value="Medium">
+            <label for="medium">Medium</label>
+    
+            <input type="radio" name="size" id="large" value="Large">
+            <label for="large">Large</label>
+        </div>
+        <div>
+            <p>Flavor:</p>
+
+            <input type="checkbox" id="hawaiian" name="hawaiian" value="Hawaiian">
+            <label for="hawaiian">Hawaiian (PHP 150.00)</label>
+            <input type="number" id="quantity_haw" name="quantity_haw" value="quantity_haw" min="0" max="3"><br>
+
+            <input type="checkbox" id="pepperoni" name="pepperoni" value="Pepperoni">
+            <label for="pepperoni">Pepperoni (PHP 140.00)</label>
+            <input type="number" id="quantity_pep" name="quantity_pep" value="quantity_pep" min="0" max="3"><br>
+
+            <input type="checkbox" id="vegetable" name="vegetable" value="Vegetable">
+            <label for="vegetable">Vegetavle(PHP 130.00)</label>
+            <input type="number" id="quantity_veg" name="quantity_veg" value="quantity_veg" min="0" max="3"><br>
+        </div>
+        <div>
+            <p></p>
+            <label for="credit">Credit Card Number:</label>
+            <input type="password" id="credit" name="credit" value="Credit"><br>
+
+            <label for="pword">Password:</label>
+            <input type="password" id="pword" name="pword" value="Pword"><br>            
+        </div>
+        <div>
+            <p></p>
+            <label for="notes">Additional Notes:</label><br>
+            <textarea name="notes" id="notes" rows="4" cols="50"></textarea>
+        </div>
+        <div>
+            <input type="button" id="submit" name="submit" value="Submit Order">
+        </div>
+    </form>
+</body>
+</html>
